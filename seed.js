@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const uri = "mongodb+srv://tech2018pandey_db_user:h46Ol8ZIrrMRuosX@cluster.bfbt3ok.mongodb.net/wasp_ecommerce";
+const uri = process.env.MONGO_URL;
 
 const products = [
   {
