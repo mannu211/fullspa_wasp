@@ -58,20 +58,15 @@ export default function LoginPage() {
           <p className="text-gray-400 text-center mb-8">Login to your WASP account</p>
 
           <form onSubmit={handleLogin} className="space-y-6">
-            <div>
-              <Label htmlFor="email" className="text-sm font-medium mb-2 block">
-                Email
-              </Label>
-              <Input
-                id="email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
-                required
-                className="bg-zinc-800 border-zinc-700 focus:border-white"
-              />
-            </div>
+            <Input
+              id="email"
+              type="text"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter email or mobile number"
+              required
+              className="bg-zinc-800 border-zinc-700 focus:border-white"
+            />
 
             <div>
               <Label htmlFor="password" className="text-sm font-medium mb-2 block">
