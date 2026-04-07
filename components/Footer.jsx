@@ -10,7 +10,7 @@ const Footer = () => {
     supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL || 'support@wasp.com',
     phone: process.env.NEXT_PUBLIC_BUSINESS_PHONE || '+91 98765 43210',
     whatsapp: process.env.NEXT_PUBLIC_BUSINESS_WHATSAPP || '+919876543210',
-    address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS || '123 Fashion Street, Bandra West, Mumbai, Maharashtra 400050, India',
+    address: process.env.NEXT_PUBLIC_BUSINESS_ADDRESS || 'Arif chamber, F-14, Kapoorthala chauraha, kapoorthala market, Sector A, Chandralok, Lucknow, Uttar Pradesh 226024',
   };
 
   const handleWhatsAppClick = () => {
@@ -255,12 +255,12 @@ const Footer = () => {
                 className="text-center"
               >
                 <MapPin className="w-16 h-16 mx-auto mb-4 text-white drop-shadow-lg" />
-                <h4 className="text-2xl font-bold mb-2 drop-shadow-lg">123 Fashion Street, Mumbai</h4>
-                <p className="text-gray-200 mb-6 drop-shadow-lg">Bandra West, Maharashtra 400050</p>
+                <h4 className="text-2xl font-bold mb-2 drop-shadow-lg">Arif chamber, F-14, Kapoorthala chauraha, kapoorthala market, Sector A</h4>
+                <p className="text-gray-200 mb-6 drop-shadow-lg">Lucknow, Uttar Pradesh 226024</p>
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://maps.google.com/?q=Mumbai+Fashion+Street+Bandra"
+                  href="https://www.google.com/maps/place/Buywasp/@26.8814568,80.9439065,849m/data=!3m2!1e3!4b1!4m6!3m5!1s0x399bfd0491c78259:0xa406f8dfb3476f2f!8m2!3d26.8814568!4d80.9464814!16s%2Fg%2F11zj7p6klk?entry=ttu&g_ep=EgoyMDI2MDQwMS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-all shadow-xl"
